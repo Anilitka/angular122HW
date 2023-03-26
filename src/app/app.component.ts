@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import { FormGroup, FormBuilder , Validators } from '@angular/forms';
 
 declare let window:any;
 
@@ -7,20 +8,24 @@ declare let window:any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'angular122';
-  formModal:any;
+export class AppComponent implements OnInit{
+title = 'angular122';
 
-  ngOnInit(): void {
-  this.formModal = new window.bootstrap.Modal(
-  document.getElementById("exampleModal")
+
+formModal:any;
+
+ngOnInit(): void {
+this.formModal = new window.bootstrap.Modal(
+document.getElementById("exampleModal")
 );
-  }
-  openModal(){
-    this.formModal.show();
-  }
-  closeModal(){
-    this.formModal.hide();
-  }
-  
 }
+openModal(){
+  this.formModal.show();
+}
+closeModal(){
+  this.formModal.hide();
+}
+
+}
+
+

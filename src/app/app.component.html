@@ -1,9 +1,7 @@
-<app-navbar></app-navbar>
 
 <div class="container">
     <div class="row ">
         <div class="col modalpop">
-            <h1>Bootstrap Modal Popup</h1>
             <button class="btn btn-primary" (click)="openModal()">Open Modal</button>
         </div>
     </div>
@@ -13,16 +11,18 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Bootstrap Modal</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel"> Modal Popup</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Bootstrap Modal Example
+          Modal Example
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModal()">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModal()">Save Changes</button>
         </div>
       </div>
     </div>
   </div>
-<app-footer></app-footer>
+
+ <app-validation></app-validation>
