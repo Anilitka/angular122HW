@@ -22,8 +22,7 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit() {  
     let id = this.Activatedroute.snapshot.paramMap.get('id');  
     this.id = id;  
-    let name = this.Activatedroute.snapshot.paramMap.get('name');
-    this.name = name;
+
    
   }
   exit(){
