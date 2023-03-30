@@ -4,8 +4,11 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ModalComponent } from './modal/modal.component';
-import { ValidationComponent } from './validation/validation.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+
+
 
 
 
@@ -13,9 +16,9 @@ import { ValidationComponent } from './validation/validation.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ModalComponent,
-    ValidationComponent,
-
+    NavbarComponent,
+    ProductsComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
