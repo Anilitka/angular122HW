@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -19,11 +21,13 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     NavbarComponent,
     ProductsComponent,
     ProductDetailsComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,17 @@
 <app-navbar></app-navbar>
 
 <router-outlet></router-outlet>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let prod of products">
+            <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">{{prod.name}}</h5>
+                  <p class="card-text">{{prod.price}}</p>
+                  <a [routerLink]="['/Details/', prod.id]" class="btn btn-primary">Go to product</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

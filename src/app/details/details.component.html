@@ -1,0 +1,14 @@
+
+<div *ngFor="let car of card">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{car.name}}</h5>
+            <p class="card-text">{{car.price}}</p>
+            <a  class="btn btn-secondary" (click)="exit()">Go Back</a>
+          </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+
+
