@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from '../assets/navbar/navbar.component';
-import { FooterComponent } from '../assets/footer/footer.component';
-import { ModalComponent } from './modal/modal.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailsComponent } from './details/details.component';
+
+
+
 
 
 
@@ -13,12 +19,15 @@ import { ModalComponent } from './modal/modal.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent,
-    ModalComponent,
+    ProductsComponent,
+    ProductDetailsComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
